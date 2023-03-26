@@ -1,18 +1,22 @@
 #pragma once
 #include <iostream>;
-using namespace std;
 
 namespace ariel{
     class Game{
-    public:    
-        void playTurn();
-        void printLastTurn();
-        void printWiner();
-        void printLog();
-        void printStats();
-        void playAll();
+        public:
+            Game(Player p1, Player p2);    
+            void playTurn();
+            void printLastTurn();
+            void printWiner();
+            void printLog();
+            void printStats();
+            void playAll();
+            int getNumOfDraws();
 
-    private:
-        string getWinersName();
+        private:
+            Player p1;
+            Player p2;
+            string winersName;
+            int numOfDraws;
     };
 }
