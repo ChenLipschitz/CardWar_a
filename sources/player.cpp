@@ -1,18 +1,15 @@
-#include "player.hpp";
-#include "string";
+#include "player.hpp"
+#include "string"
 
 using namespace ariel;
 
+    Player::Player(){};
     Player::Player(string name_){
         string name=name_;
     }
 
-    // string Player::getName(){
-    //     return name;
-    // }
-
     int Player::stacksize(){
-        return 0;
+        return 26;
     }
 
     int Player::cardesTaken(){

@@ -1,23 +1,19 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
-#include <string>;
+#pragma once
+#include <string>
+#include <iostream>
 using namespace std;
 
 namespace ariel{
     class Player{
-        public:
-            Player();
-            Player(string name);
-            int stacksize();
-            int cardesTaken();
-            string getName();
-    
-
         private:
-            string name;
-            //stack<card> myStack;
+        string name;
+
+        public:
+        Player();
+        Player(string name);
+        int stacksize();
+        int cardesTaken();
+        string getName();
     };
 }
 
-
-#endif
